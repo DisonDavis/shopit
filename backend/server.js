@@ -1,11 +1,9 @@
 const app = require('./app')
 const dotenv = require('dotenv')
-const connectionDatabase = require('./config/database')
 const connectDatabase = require('./config/database')
 
 //Setting up config file
 dotenv.config({ path: 'backend/config/config.env' })
-
 
 //Handle uncaught exceptions
 process.on('uncaughtException', (err) => {
